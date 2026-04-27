@@ -32,3 +32,11 @@ minio.exe
 
 # Data (optional)
 data/
+
+# binaries
+*.exe
+
+# data files
+*.csv
+*.json
+*.parquet
