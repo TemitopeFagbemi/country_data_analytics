@@ -59,6 +59,7 @@ services:
       MINIO_ROOT_PASSWORD: StrongPassword123
     volumes:
       - minio_data:/data
+      - ./country_dbt:/usr/local/airflow/country_dbt
 
 volumes:
   minio_data:

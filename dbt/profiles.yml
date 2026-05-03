@@ -1,0 +1,17 @@
+country_data_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: QSAPKTH-CL67259
+
+      user: snowtee6
+      password: Snowflakeadmin123
+
+      role: ACCOUNTADMIN
+      database: COUNTRY_DB
+      warehouse: COMPUTE_WH
+      schema: PUBLIC
+
+      threads: 4
+      client_session_keep_alive: False

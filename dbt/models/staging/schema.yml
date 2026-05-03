@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: countries_silver
+    description: "Cleaned country data from raw JSON"
+
+    columns:
+      - name: country_name
+        tests:
+          - not_null
+          - unique
+
+      - name: region
+        tests:
+          - not_null
+
+      - name: population
+        tests:
+          - not_null
+
+      - name: currency_code
+        tests:
+          - not_null
+
+      - name: total_population
+        tests:
+          - not_null
+exposures:
+    - name: streamlit_dashboard
+      type: dashboard
+      maturity: high
+
+      depends_on:
+        - ref('countries_silver')
+
+      owner:
+        name: Temitope
+        email: your@email.com  

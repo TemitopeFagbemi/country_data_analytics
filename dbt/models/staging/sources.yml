@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: your_source
+    database: COUNTRY_DB
+    schema: PUBLIC
+    tables:
+      - name: countries_data_raw
